@@ -1,4 +1,4 @@
-from matplotlib import pyplot
+
 from numpy import asarray, exp
 from numpy.random import rand, randn, seed
 
@@ -57,7 +57,4 @@ temp = 10
 best, score, scores = simulated_annealing(objective, bounds, n_iterations, step_size, temp)
 print('Done!')
 print('f(%s) = %f' % (best, score))
-pyplot.plot(scores, '.-')
-pyplot.xlabel('Improvement Number')
-pyplot.ylabel('Evaluation f(x)')
-pyplot.show()
+
